@@ -76,4 +76,4 @@ Genarate Payload and Listen For Incoming Connection
 
 ![Screenshot](./screenshots/screenshot2.png)
 
-![Screenshot2](./screenshots/screenshot3.png)
+![Screenshot](./screenshots/screenshot3.png)
