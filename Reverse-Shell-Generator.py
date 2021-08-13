@@ -297,11 +297,12 @@ Dart:
 
 def NC(port,payload):
     if payload == 'socat':
-        system(f'socat file:`tty`,raw,echo=0 TCP-L:{port}')
+        system(f'rlwrap socat file:`tty`,raw,echo=0 TCP-L:{port}')
     elif payload == 'openssl':
-        system(f'ncat --ssl -vv -l -p {port}')
+        system(f'rlwrap ncat --ssl -vv -l -p {port}')
     else:
-        system(f'sudo nc -nvlp {port}')
+        system(f'sudo rlwrap nc -nvlp {port}')
+
 
 def SelectPayload(payload):
     if payload == 'bash':

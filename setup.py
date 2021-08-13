@@ -26,6 +26,8 @@ if getuid() == 0: # Checking Permissions
         system('apt-get install ncat')
     if which('openssl') == None:
         system('apt-get install openssl')
+    if which("rlwrap") == None:
+        system('apt-get install rlwrap')
     print("\n Installing Revers-Shell-Generator.\n"+Fore.RESET)
     system("cp Reverse-Shell-Generator.py /usr/sbin/reverseshellgenerator && chmod +x /usr/sbin/reverseshellgenerator") # Copying Tool For PATH
     print(intro)
