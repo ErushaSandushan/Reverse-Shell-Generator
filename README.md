@@ -6,7 +6,7 @@
 ## Installation & Usage
 
 ```bash
-    git clone https://github.com/3rushaS/Reverse-Shell-Generator.git
+    git clone https://github.com/ErushaSandushan/Reverse-Shell-Generator.git
     cd Reverse-Shell-Generator
     sudo python3 setup.py
 ```
